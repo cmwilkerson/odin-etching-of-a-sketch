@@ -1,10 +1,9 @@
 let playableGrid= document.querySelector("#gridContainer");
 console.log(playableGrid);
-let [rowGrid,colGrid]=[4,4];
 let elementCreation
-
-for(let r = 1; r <= rowGrid; r++ ) {
-    for(let c = 1; c <= colGrid; c++ ){
+function buildGrid(sideLength){
+    for(let r = 1; r <= sideLength; r++ ) {
+    for(let c = 1; c <= sideLength; c++ ){
         console.log(`Current Row: ${r} Current Column:${c}`);
         elementCreation=document.createElement("div");
         elementCreation.setAttribute("id",`divR${r}C${c}`);
@@ -13,3 +12,5 @@ for(let r = 1; r <= rowGrid; r++ ) {
         playableGrid.appendChild(elementCreation);
     }
 }
+}
+buildGrid(4);

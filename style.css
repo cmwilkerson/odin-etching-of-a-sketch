@@ -1,0 +1,10 @@
+#gridContainer{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    min-width: 960px;
+}
+.gridPlay{
+    width: auto;
+}
