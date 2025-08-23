@@ -8,9 +8,12 @@ function buildGrid(sideLength){
         elementCreation=document.createElement("div");
         elementCreation.setAttribute("id",`divR${r}C${c}`);
         elementCreation.classList.add("gridPlay");
-        elementCreation.textContent=`R${r}C${c}`
+        elementCreation.textContent=`R${r}C${c}`;
+        elementCreation.style.flex =`1 1 ${(100/sideLength)}%`;
         playableGrid.appendChild(elementCreation);
-    }
+    }    
 }
 }
-buildGrid(4);
+buildGrid(10);
+console.log(playableGrid);
+
